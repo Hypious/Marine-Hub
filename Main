@@ -1,0 +1,69 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Marine Hub", "Ocean")
+
+local Tab = Window:NewTab("Game Scripts")
+local Section = Tab:NewSection("Game Scripts")
+Section:NewButton("Pet Simulator GUI", "A Script", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/ShinyToolSupported/main/ShinyTool.lua"))()
+    print("Clicked")
+end)
+Section:NewButton("Collect All Pets GUI", "A Script", function()loadstring(game:HttpGet('https://raw.githubusercontent.com/KodaLINEN/Collect-All-Pets/main/main'))()
+    print("Clicked")
+end)
+Section:NewButton("Starving Artists Copy Script", "A Script", function()getgenv().target = "Drocald"; -- target's nickname
+
+    getgenv().easel = 1; -- target's easel
+    
+    getgenv().copy_type = "Paint"; -- type of copying. There's two types of copying: "Paint" - copies art to PaintFrame, "Create" - copies and creates art.
+    
+    
+    
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/dizyhvh/rbx_scripts/main/starving_artists_copy_art.lua", true))();
+    print("Clicked")
+end)
+Section:NewButton("Arsenal GUI", "A Script", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/BoltsHubV5"))()
+    print("Clicked")
+end)
+
+
+local Tab = Window:NewTab("Misc Scripts")
+local Section = Tab:NewSection("Misc Scripts")
+
+Section:NewSlider("Walkspeed Slider", "Walkspeed Script", 250, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+Section:NewButton("AFK Gui", "AFK Gui Script", function()loadstring(game:HttpGet("https://pastebin.com/raw/TsVgzGf5", true))()
+    print("Clicked")
+end)
+
+
+
+local Tab = Window:NewTab("Universal Scripts")
+local Section = Tab:NewSection("Universal Scripts")
+Section:NewButton("Walk on Walls", "A Script", function()loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+    print("Clicked")
+end)
+Section:NewButton("Animation GUI", "A Script", function()loadstring(game:HttpGet('https://raw.githubusercontent.com/RubyBoo4life/Scripts/main/animations.vis'))()
+    print("Clicked")
+end)
+Section:NewButton("Universal Hitbox Expander", "A Script", function()loadstring(game:HttpGet("http://gameovers.net/Scripts/Free/HitboxExpander/main.lua", true))()
+    print("Clicked")
+end)
+
+local Tab = Window:NewTab("Credits")
+local Section = Tab:NewSection("Credits")
+Section:NewButton("All Credits go to:", "Credits", function()
+    print("Clicked")
+end)
+Section:NewButton("Script Creators ( For making the Scripts )", "Credits", function()
+    print("Clicked")
+end)
+Section:NewButton("Tesco ( For making the hub ) ", "ButtonInfo", function()
+    print("Clicked")
+end)
+
+local Tab = Window:NewTab("Settings")
+local Section = Tab:NewSection("Settings")
+Section:NewKeybind("GUI Keybind", "Keybind", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
