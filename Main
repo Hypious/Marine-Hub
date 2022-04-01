@@ -332,6 +332,18 @@ end)
 Section:NewButton("Enable Reset Button", "Only use this if it is disabled", function()loadstring(game:HttpGet("https://pastebin.com/raw/mW24cfXm", true))()
     print("Clicked")
 end)
+Section:NewButton("Btools", "Script", function()local tool1 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+    local tool2 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+    local tool3 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+    local tool4 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+    local tool5 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+    tool1.BinType = "Clone"
+    tool2.BinType = "GameTool"
+    tool3.BinType = "Hammer"
+    tool4.BinType = "Script"
+    tool5.BinType = "Grab"
+    print("Clicked")
+end)
 
 
 
